@@ -6,7 +6,7 @@ import tempfile
 def compute(f0, f1):
 
     with tempfile.NamedTemporaryFile(suffix=".txt") as FOUT:
-        cmd = f"java -jar pdfbox-app-2.0.21.jar ExtractText {f0} {FOUT.name}"
+        cmd = f"java -jar src/pdfbox-app-2.0.21.jar ExtractText {f0} {FOUT.name}"
         os.system(cmd)
 
         with open(FOUT.name, "r") as FIN:

@@ -12,19 +12,23 @@ df = pd.read_csv(f_xml, usecols=[name])
 targets = df[name].values.tolist()
 
 
-def proxy(url):
-    port = 8000
-    hostname = "ec2-18-220-255-208.us-east-2.compute.amazonaws.com"
-    proxy_url = f"http://{hostname}:{port}"
-    return requests.get(proxy_url, params={"url": url})
+# If a proxy server is needed, use it here.
+# def proxy(url):
+#    port = 8000
+#    hostname = ""
+#    proxy_url = f"http://{hostname}:{port}"
+#    return requests.get(proxy_url, params={"url": url})
 
 
 def compute(f0, f1):
     url = "https://philarchive.org/archive/" + f0
 
     try:
-        # r = requests.get(url)
-        r = proxy(url)
+        # Use a regular request, or ...
+        r = requests.get(url)
+
+        # Use the proxy server here
+        # r = proxy(url)
     except Exception as EX:
         print(f"Failed to get {url}, {EX}")
         return False
