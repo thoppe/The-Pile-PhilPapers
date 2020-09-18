@@ -6,7 +6,7 @@ The PhilPapers (PP) are index using the [OAI-MPH](https://www.openarchives.org/p
 
     python2 pyoaiharvest.py -l https://philarchive.org/oai.pl -o data/phil_meta.xml
 
-From that, each publication is downloaded if it exists. Papers with text are extracted, but papers with non-machine readable text are ignored. Non-English language publications are kept, and the metadata reflects the language reported by the OAI-MPH XML.
+From that, each publication is downloaded if it exists. Papers with text are extracted using pdfbox, but papers with non-machine readable text are ignored. Non-English language publications are kept, and the metadata reflects the language reported by the OAI-MPH XML. The text is filtered with pdf_filter.py from [PDFextract](https://github.com/sdtblck/PDFextract)
 
      ✔ Saved to data/PhilArchive.jsonl
      ℹ Saved 33,990 articles
