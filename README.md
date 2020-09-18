@@ -2,7 +2,7 @@
 
 Download, parse, and filter an open access collection of philosophy publication[PhilPapers](https://philpapers.org/), data-ready for [The-Pile](https://github.com/EleutherAI/The-Pile). 
 
-The PhilPapers (PP) are indexed using [OAI-MPH](https://www.openarchives.org/pmh/), the Open Archives Initiative Protocol for Metadata Harvesting. As such, the first step to collect the data is to get the XML for all links:
+The PhilPapers (PP) are indexed using [OAI-MPH](https://www.openarchives.org/pmh/), the Open Archives Initiative Protocol for Metadata Harvesting. As such, the first step to collect the data is to get the XML for all links. This was done using a harvester found [here](https://raw.githubusercontent.com/vphill/pyoaiharvester/master/pyoaiharvest.py):
 
     python2 pyoaiharvest.py -l https://philarchive.org/oai.pl -o data/phil_meta.xml
 
