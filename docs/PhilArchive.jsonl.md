@@ -1,13 +1,13 @@
 
-# "PhilPapers"
+# PhilPapers
 
-| "PhilPapers"  |  |
+| PhilPapers  |  |
 | ---             | ---:   |
-| Reference URL   | "https://philpapers.org/" |
-| Replication URL | "https://github.com/thoppe/The-Pile-PhilPapers" |
+| Reference URL   | https://philpapers.org/ |
+| Replication URL | https://github.com/thoppe/The-Pile-PhilPapers |
 | Uncompressed file size | 2,610,566,629 |
 | Year range | 2009 - 2020 |
-| Primary language | "Mostly English (estimated 60-80%)" |
+| Primary language | Mostly English (estimated 60-80%) |
 | Document count  | 33,990 |
 | Word count      | 397,013,060 |
 | Character count | 2,521,946,365 |
