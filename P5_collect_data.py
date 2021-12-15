@@ -46,7 +46,10 @@ FOUT = jsonlines.open(f_save, "w")
 for item in Pipe(df.f_text)(compute, -1):
     key, text = item
 
-    row = {"meta": meta_df.loc[key].to_dict(), "text": text}
+    try:
+        row = {"meta": meta_df.loc[key].to_dict(), "text": text}
+    except KeyError:
+        row = None
 
     if row is not None:
         FOUT.write(row)

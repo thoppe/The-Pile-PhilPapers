@@ -10,14 +10,12 @@ From that, each publication is downloaded. Some entries do not exist, or have be
 
 ### Pile-V2 Statistics
 
-*in progress*
-
     ✔ Saved to PhilArchive.jsonl.zst
-    ℹ Collection completed 12/../..
-    ℹ XXX publications (XXX added, XXX growth)
-    ℹ Uncompressed filesize           XXX
-    ℹ Compressed filesize     XXX,XXX,XXX
-    ℹ sha256sum 
+    ℹ Collection completed 12/15/2021
+    ℹ 42,464 publications (8,474 added, 24.9% growth)
+    ℹ Uncompressed filesize 3,270,636,340
+    ℹ Compressed filesize     985,311,313
+    ℹ sha256sum 9311a57fcbde8dd832e954821bdf0e1f3e2899d9567f6c3b5d7a2d1161fa3e7d
 
 ### Pile-V1 Statistics
 

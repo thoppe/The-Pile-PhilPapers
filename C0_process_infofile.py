@@ -63,8 +63,11 @@ if "file_information" not in info:
     }
 
 
-if "corpus_statistics" not in info or int(info['sample_data']['sample_row_n']) != sample_row_n:
-    
+if (
+    "corpus_statistics" not in info
+    or int(info["sample_data"]["sample_row_n"]) != sample_row_n
+):
+
     print(f"Computing statistics for {f_dataset}")
 
     stats = {
@@ -110,7 +113,7 @@ js = json.dumps(info, indent=2)
 with open(f_info, "w") as FOUT:
     FOUT.write(js)
 
-    
+
 meta_pp = json.dumps(info["sample_data"]["meta"], indent=2)
 
 print(js)
