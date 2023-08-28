@@ -1,3 +1,4 @@
+import os
 import time
 import re
 import xml.dom.pulldom
@@ -92,6 +93,11 @@ if __name__ == "__main__":
         serverString = "http://" + serverString
 
     print("Writing records to %s from archive %s" % (outFileName, serverString))
+    os.makedirs('data', exist_ok=True)
+    with open(outFileName, "w") as file:
+        file.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n")
+        file.write("<metadata>\n")
+        file.write("</metadata>\n")
 
     ofile = codecs.lookup("utf-8")[-1](open(outFileName, "wb"))
 
